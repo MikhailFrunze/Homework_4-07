@@ -5,3 +5,17 @@
 // 3. Вносите изменения в код
 // 4. Коммитите и пушите изменения в форкнутый репозиторий
 // 5. Создаете пулл-реквест в оригинальный репозиторий
+
+let array = [34, 4, 1, 0, 9, 5];
+
+let answer = 0;
+let sum = array.reduce(function (total, el) {
+    if (el === 0) {
+        answer = total;
+    } else {
+        return total + el;
+    }
+});
+
+if(answer == undefined){answer = sum};
+console.log(answer); 
